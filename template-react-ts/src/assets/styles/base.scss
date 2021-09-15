@@ -1,0 +1,19 @@
+$body-color: #f5f0f0;
+
+body {
+  background: $body-color;
+  padding: 20px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 10px;
+}
+
+.icon-warning {
+  width: 15px;
+  margin-right: 5px;
+}
