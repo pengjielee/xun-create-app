@@ -61,6 +61,8 @@ const TEMPLATES = FRAMEWORKS.map(
 
 const renameFiles = {
   _gitignore: ".gitignore",
+  _babelrc: ".babelrc",
+  _eslintrc: ".eslintrc"
 };
 
 function copy(src, dest) {

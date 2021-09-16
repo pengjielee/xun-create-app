@@ -7,7 +7,7 @@ interface IProps {
 
 const Intro: React.FC<IProps> = ({ name, age }) => (
   <div>
-    My name is {name}. I'm {age}.
+    My name is {name}. I'm {age} years old.
   </div>
 );
 
