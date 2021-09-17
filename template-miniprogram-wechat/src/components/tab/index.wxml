@@ -1,0 +1,3 @@
+<view  hidden='{{!visiable}}'>
+  <slot></slot>
+</view>

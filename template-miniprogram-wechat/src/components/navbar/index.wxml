@@ -1,0 +1,3 @@
+<view class="p-navbar" style="height:{{navBarHeight}}px;background: {{background}}">
+  <view class="p-navbar_title" style="top:{{navBarTop}}px;">{{title}}</view>
+</view>

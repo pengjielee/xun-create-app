@@ -1,0 +1,30 @@
+.p-tab {
+}
+
+.p-tabnav__item {
+  color: #99a0aa;
+  font-size: 28rpx;
+  height: 40rpx;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  padding: 0 30rpx 30rpx;
+  top: 1px;
+}
+
+.p-tabnav__item_on {
+  color: #323840;
+  position: relative;
+}
+.p-tabnav__item_on:after {
+  content: '';
+  width: 20rpx;
+  height: 0;
+  border-top: 6rpx solid #f22d50;
+  border-radius: 3rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%);
+}

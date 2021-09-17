@@ -1,0 +1,166 @@
+.hidden {
+  display: none !important;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-svg-close {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath fill-rule='evenodd' fill='%23fff' d='M7.967 5.915L2.701.648.659 2.69l5.266 5.267-5.266 5.266 2.042 2.043 5.266-5.267 5.267 5.267 2.042-2.043-5.267-5.266 5.267-5.267L13.234.648 7.967 5.915z'/%3E%3C/svg%3E");
+  background-size: cover;
+  display: inline-block;
+  width: 16rpx;
+  height: 16rpx;
+  margin-left: 8rpx;
+}
+
+.icon-svg-checked {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='39' height='32'%3E%3Cpath stroke='%23fff' stroke-width='6' fill='none' d='M7.478 9.113l7.554 7.781L28.522 3'/%3E%3C/svg%3E");
+  background-size: cover;
+  display: inline-block;
+  width: 39rpx;
+  height: 32rpx;
+}
+
+.icon-svg-arrow {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='28'%3E%3Cpath stroke='%23A8998B' stroke-width='4' fill='none' d='M5 1.994L17.006 14 5 26.006'/%3E%3C/svg%3E");
+  background-size: cover;
+  display: inline-block;
+  width: 21rpx;
+  height: 28rpx;
+  transform: scale(0.9);
+}
+
+.icon-svg-info {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36'%3E%3Cpath stroke='%2399A0AA' stroke-width='3' fill='none' d='M17 1.5c8.56 0 15.5 6.94 15.5 15.5 0 8.56-6.94 15.5-15.5 15.5-8.56 0-15.5-6.94-15.5-15.5C1.5 8.44 8.44 1.5 17 1.5z'/%3E%3Cpath fill-rule='evenodd' fill='%2399A0AA' d='M15.343 14.958l-.609 9.53h4.555l-.635-9.53h-3.311zm1.669-6.452c-.689 0-1.28.234-1.775.702-.494.468-.741 1.022-.741 1.662 0 .657.247 1.219.741 1.687a2.493 2.493 0 001.775.702c.688 0 1.275-.234 1.761-.702.486-.468.728-1.03.728-1.687 0-.64-.242-1.194-.728-1.662a2.447 2.447 0 00-1.761-.702z'/%3E%3C/svg%3E");
+  background-size: cover;
+  display: inline-block;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.card-doctor-item,
+.card-doctor-intro {
+  position: relative;
+  padding: 20px 0;
+  color: #31373f;
+}
+
+.card-doctor-item .media .media-left,
+.card-doctor-intro .media .media-left {
+  font-size: 0;
+}
+
+.card-doctor-item .media .media-right,
+.card-doctor-intro .media .media-right {
+  margin-left: 15px;
+  flex: 0 1 100%;
+}
+
+.card-doctor-item .doctor-item__img,
+.card-doctor-intro .doctor-item__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.card-doctor-item .doctor-item__info,
+.card-doctor-intro .doctor-item__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.card-doctor-item .doctor-item__name,
+.card-doctor-intro .doctor-item__name {
+  color: #31373f;
+  font-size: 19px;
+  font-weight: bold;
+  max-width: 100px;
+}
+
+.card-doctor-item .doctor-item__work,
+.card-doctor-intro .doctor-item__work {
+  font-size: 14px;
+  color: #444951;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.card-doctor-item .doctor-item__work span,
+.card-doctor-intro .doctor-item__work span {
+  margin-right: 5px;
+}
+
+.card-doctor-item .doctor-item__goodat,
+.card-doctor-intro .doctor-item__goodat {
+  color: #999fa9;
+  font-size: 14px;
+  word-break: break-all;
+}
+
+.card-doctor-item .tag-position,
+.card-doctor-intro .tag-position {
+  margin-left: 5px;
+  max-width: 100px;
+}
+
+.card-doctor-item {
+  padding: 0;
+  padding-bottom: 30px;
+}
+
+.card-doctor-intro .media {
+  margin-bottom: 15px;
+}
+
+.card-doctor-intro .doctor-item__goodat {
+  font-size: 14px;
+}
+
+.card-doctor-intro .btn-expand {
+  bottom: -1px;
+}
+
+.card-hospital-item {
+  margin-bottom: 30px;
+}
+
+.card-hospital-item .media .media-left {
+  font-size: 0;
+}
+
+.card-hospital-item .media .media-right {
+  margin-left: 15px;
+  flex: 0 1 100%;
+}
+
+.card-hospital-item .hospital-item__name {
+  font-size: 19px;
+  font-weight: bold;
+  margin: 2px 0;
+  color: #31373f;
+}
+
+.card-hospital-item .hospital-item__address {
+  font-size: 14px;
+  word-break: break-all;
+  margin-bottom: 3px;
+  font-weight: 400;
+  color: #999fa9;
+}
+
+.card-hospital-item .hospital-item__distance {
+  font-size: 12px;
+  color: #999fa9;
+  font-weight: 400;
+}
+
+.card-hospital-item .hospital-item__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}

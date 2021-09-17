@@ -1,0 +1,12 @@
+<view class="p-tab">
+  <view class="p-tabnav">
+    <block wx:for="{{titles}}" wx:for-index="index" wx:for-item="item" wx:key="*this">
+      <view data-index="{{index}}" bindtap="onTap" class="p-tabnav__item {{currentIndex == index ? 'p-tabnav__item_on' : ''}}">
+        <view class="p-navbar__title">{{item}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="p-tab__panel">
+      <slot></slot>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view hidden="{{ !visible }}">
+    <view class="p-overlay"></view>
+    <view class="p-dialog p-dialog-{{ type }}">
+        <view class="p-dialog__hd"
+            ><view class="p-dialog__hd-title"
+                ><text>{{ title }}</text></view
+            ></view
+        >
+        <view class="p-dialog__bd"
+            ><text>{{ content }}</text></view
+        >
+        <view class="p-dialog__ft hairline--top">
+            <view
+                wx:if="{{ showCancelButton }}"
+                class="p-dialog__btn p-dialog__btn_default hairline--right"
+                catchtap="_cancelEvent"
+                >{{ cancelText }}</view
+            >
+            <view class="p-dialog__btn p-dialog__btn_primary" catchtap="_confirmEvent">{{ confirmText }}</view>
+        </view>
+    </view>
+</view>

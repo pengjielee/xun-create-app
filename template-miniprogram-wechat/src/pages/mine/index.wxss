@@ -1,0 +1,8 @@
+/* src/pages/about/index.wxss */
+.page-mine {
+  padding: 40rpx;
+}
+
+.page-mine .card {
+  margin-bottom: 30rpx;
+}

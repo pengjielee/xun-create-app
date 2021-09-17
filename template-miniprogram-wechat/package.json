@@ -1,0 +1,16 @@
+{
+	"name": "wechat-miniprogram-starter",
+	"description": "wechat-miniprogram-starter",
+	"version": "0.0.0",
+	"main": "src/app.js",
+	"author": "",
+	"license": "ISC",
+	"scripts": {
+		"sass-watch": "node scripts/sass-watch.js",
+		"sass-build": "node scripts/sass-build.js"
+	},
+	"devDependencies": {
+		"chokidar": "^3.5.2",
+		"node-sass": "^6.0.1"
+	}
+}

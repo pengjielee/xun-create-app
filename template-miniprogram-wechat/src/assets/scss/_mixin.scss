@@ -1,0 +1,119 @@
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin btn-basic {
+  @include center;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.btn-primary {
+  @include btn-basic;
+  background: #f22d50;
+  box-shadow: 0 5rpx 16rpx 0 rgba(242, 45, 80, 0.3);
+  color: #ffffff;
+}
+.btn-default {
+  @include btn-basic;
+  background: #f3f4f8;
+  color: #f22d50;
+}
+
+@mixin overflow-basic($line) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+  word-break: break-all;
+  position: relative;
+}
+.overflow-1 {
+  @include overflow-basic(1);
+}
+.overflow-2 {
+  @include overflow-basic(2);
+}
+.overflow-3 {
+  @include overflow-basic(3);
+}
+
+@mixin tag-basic($height) {
+  /*height: $height;
+    line-height: $height;*/
+  border-radius: 10rpx;
+  font-size: 24rpx;
+  display: inline-block;
+  padding: 4rpx 10rpx;
+  margin-right: 10rpx;
+}
+.tag-primary {
+  @include tag-basic(48rpx);
+  background: #ddd;
+  color: #333;
+}
+.tag-position {
+  @include tag-basic(48rpx);
+  background: linear-gradient(90deg, rgba(238, 200, 184, 1) 0%, rgba(220, 172, 151, 1) 100%);
+  opacity: 0.8;
+  color: #a27768;
+}
+.tag-department {
+  @include tag-basic(48rpx);
+  background: linear-gradient(90deg, rgba(203, 213, 226, 1), rgba(149, 164, 183, 1));
+  color: #444951;
+}
+.tag-article-excerpt {
+  @include tag-basic(44rpx);
+  background: #e7ccb1;
+  color: #5f4c4c;
+}
+.tag-article-hot {
+  @include tag-basic(44rpx);
+  background: #f3f4f8;
+  color: #989fa9;
+}
+.tag-search {
+  @include tag-basic(70rpx);
+  border-radius: 20rpx;
+  text-align: center;
+  background: #f3f4f8;
+  color: #31373f;
+  font-size: 28rpx;
+  padding: 14rpx 24rpx;
+  margin: 0 20rpx 20rpx 0;
+  cursor: pointer;
+  a {
+    color: #31373f;
+  }
+}
+.tag-appoint {
+  @include tag-basic(40rpx);
+  background: linear-gradient(90deg, rgba(250, 223, 214, 1) 0%, rgba(247, 216, 203, 1) 100%);
+  color: #e7867f;
+}
+.tag-ask {
+  @include tag-basic(40rpx);
+  background: linear-gradient(270deg, rgba(254, 227, 192, 1) 0%, rgba(255, 233, 204, 1) 99%);
+  color: #dfa373;
+}
+.tag-gray {
+  @include tag-basic(60rpx);
+  background: #f3f4f8;
+  color: #99a0aa;
+  padding: 10rpx 24rpx;
+}
+.tag-red {
+  @include tag-basic(40rpx);
+  background: #f33151;
+  min-width: 120rpx;
+  color: #ffffff;
+}

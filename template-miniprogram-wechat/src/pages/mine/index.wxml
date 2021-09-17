@@ -1,0 +1,17 @@
+<view class="page-mine">
+  <view class="card" bindtap="handleJumpToLogsPage"><button>查看日志</button></view>
+  <view class="card" bindtap="handleOpenDialog"><button>打开弹窗</button></view>
+ 
+  <p-tabs  active="{{ 0 }}" bind:change="handleTabChange">
+      <p-tab title="全部积分">
+          1
+      </p-tab>
+      <p-tab title="已获取">
+          2
+      </p-tab>
+      <p-tab title="已使用">
+          3
+      </p-tab>
+  </p-tabs>
+  <p-dialog id="dialog" bind:confirmEvent="onDialogConfirm"></p-dialog>
+</view>

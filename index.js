@@ -80,6 +80,11 @@ const FRAMEWORKS = [
         display: "TypeScript",
         color: cyan,
       },
+      {
+        name: "react-parcel",
+        display: "JavaScript",
+        color: magenta,
+      },
     ],
   },
 ];
