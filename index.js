@@ -20,22 +20,35 @@ const FRAMEWORKS = [
   {
     name: "express",
     color: yellow,
-    variants: [],
+    variants: [
+      {
+        name: "express-upload",
+        display: "JavaScript",
+        color: yellow,
+      },
+    ],
   },
   {
     name: "koa",
     color: yellow,
-    variants: [],
+    variants: [
+      {
+        name: "koa-static",
+        display: "JavaScript",
+        color: yellow,
+      },
+    ],
   },
   {
     name: "next",
     color: yellow,
-    variants: [],
-  },
-  {
-    name: "vue",
-    color: green,
-    variants: [],
+    variants: [
+      {
+        name: "next",
+        display: "JavaScript",
+        color: yellow,
+      },
+    ],
   },
   {
     name: "react",

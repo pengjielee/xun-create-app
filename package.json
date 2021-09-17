@@ -1,8 +1,15 @@
 {
   "name": "xun-create-app",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "bin": {
+    "xun-create-app": "index.js",
+    "xca": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template-*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
