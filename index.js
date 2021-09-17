@@ -18,55 +18,6 @@ const cwd = process.cwd();
 
 const FRAMEWORKS = [
   {
-    name: "express",
-    color: yellow,
-    variants: [
-      {
-        name: "express-upload",
-        display: "JavaScript",
-        color: blue,
-      },
-      {
-        name: "express-upload",
-        display: "JavaScript",
-        color: cyan,
-      },
-    ],
-  },
-  {
-    name: "koa",
-    color: yellow,
-    variants: [
-      {
-        name: "koa-static",
-        display: "JavaScript",
-        color: blue,
-      },
-    ],
-  },
-  {
-    name: "next",
-    color: yellow,
-    variants: [
-      {
-        name: "next",
-        display: "JavaScript",
-        color: blue,
-      },
-    ],
-  },
-  {
-    name: "electron",
-    color: yellow,
-    variants: [
-      {
-        name: "electron",
-        display: "JavaScript",
-        color: blue,
-      },
-    ],
-  },
-  {
     name: "react",
     color: yellow,
     variants: [
@@ -87,6 +38,67 @@ const FRAMEWORKS = [
       },
     ],
   },
+  {
+    name: "next",
+    color: yellow,
+    variants: [
+      {
+        name: "next",
+        display: "JavaScript",
+        color: blue,
+      },
+    ],
+  },
+  {
+    name: "koa",
+    color: yellow,
+    variants: [
+      {
+        name: "koa-static",
+        display: "JavaScript",
+        color: blue,
+      },
+    ],
+  },
+  {
+    name: "express",
+    color: yellow,
+    variants: [
+      {
+        name: "express-upload",
+        display: "JavaScript",
+        color: blue,
+      },
+      {
+        name: "express-upload",
+        display: "JavaScript",
+        color: cyan,
+      },
+    ],
+  },
+  {
+    name: "electron",
+    color: yellow,
+    variants: [
+      {
+        name: "electron",
+        display: "JavaScript",
+        color: blue,
+      },
+    ],
+  },
+  {
+    name: "miniprogram",
+    color: yellow,
+    variants: [
+      {
+        name: "miniprogram-wechat",
+        display: "JavaScript",
+        color: blue,
+      },
+    ],
+  },
+  
 ];
 
 const TEMPLATES = FRAMEWORKS.map(
