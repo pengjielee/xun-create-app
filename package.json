@@ -1,6 +1,6 @@
 {
   "name": "xun-create-app",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "bin": {
     "xun-create-app": "index.js",
@@ -16,7 +16,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "kolorist": "^1.5.0",
     "minimist": "^1.2.5",
     "prompts": "^2.4.1"

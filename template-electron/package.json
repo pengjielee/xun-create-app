@@ -1,0 +1,22 @@
+{
+  "name": "electron-starter",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "npm run start"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "",
+  "license": "ICS",
+  "devDependencies": {
+    "electron": "^14.0.1"
+  }
+}

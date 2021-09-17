@@ -51,6 +51,17 @@ const FRAMEWORKS = [
     ],
   },
   {
+    name: "electron",
+    color: yellow,
+    variants: [
+      {
+        name: "electron",
+        display: "JavaScript",
+        color: yellow,
+      },
+    ],
+  },
+  {
     name: "react",
     color: cyan,
     variants: [
