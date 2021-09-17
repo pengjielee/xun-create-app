@@ -24,7 +24,12 @@ const FRAMEWORKS = [
       {
         name: "express-upload",
         display: "JavaScript",
-        color: yellow,
+        color: blue,
+      },
+      {
+        name: "express-upload",
+        display: "JavaScript",
+        color: cyan,
       },
     ],
   },
@@ -35,7 +40,7 @@ const FRAMEWORKS = [
       {
         name: "koa-static",
         display: "JavaScript",
-        color: yellow,
+        color: blue,
       },
     ],
   },
@@ -46,7 +51,7 @@ const FRAMEWORKS = [
       {
         name: "next",
         display: "JavaScript",
-        color: yellow,
+        color: blue,
       },
     ],
   },
@@ -57,23 +62,23 @@ const FRAMEWORKS = [
       {
         name: "electron",
         display: "JavaScript",
-        color: yellow,
+        color: blue,
       },
     ],
   },
   {
     name: "react",
-    color: cyan,
+    color: yellow,
     variants: [
       {
         name: "react",
         display: "JavaScript",
-        color: yellow,
+        color: blue,
       },
       {
         name: "react-ts",
         display: "TypeScript",
-        color: blue,
+        color: cyan,
       },
     ],
   },
@@ -86,7 +91,7 @@ const TEMPLATES = FRAMEWORKS.map(
 const renameFiles = {
   _gitignore: ".gitignore",
   _babelrc: ".babelrc",
-  _eslintrc: ".eslintrc"
+  _eslintrc: ".eslintrc",
 };
 
 function copy(src, dest) {
