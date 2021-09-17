@@ -1,0 +1,54 @@
+extends layout
+
+block content
+	div.container
+		input.copy-input(type='text' id='copyInput')
+		form.file-form(action='/uploads' method='post' enctype='multipart/form-data' name='fileForm' id='fileForm')
+			input.file-input(type='file' name='photos' multiple required id='fileInput')
+			input.file-submit(type='submit' id='fileInput')
+			input.file-reset(type='reset' name='reset')
+		ul.file-list(id='fileList')
+block script
+	script.
+		var copyInput = $('#copyInput');
+		var origin = window.location.origin;
+
+		document.getElementById('fileInput').onchange = function(){
+			var form = document.forms.namedItem('fileForm');
+			var formData = new FormData(form);
+			var xhr = new XMLHttpRequest();
+			xhr.onload = function(e){
+				if(xhr.status === 200){
+					var response = JSON.parse(xhr.responseText);
+					var html = [];
+					response.data.forEach(function(item,index){
+						var url = origin + '' + item
+						html.push('<li>');
+						html.push('<span class="url">'+url+'</span>');
+						html.push('<div class="action">');
+						html.push('<a data-url='+url+' class="copy js-copy">copy</a>');
+						html.push('<span class="tip js-tip"></span>');
+						html.push('</div>');
+						html.push('</li>');
+					})
+					document.getElementById('fileList').innerHTML = html.join('');
+					document.getElementById('fileInput').value = "";
+				}
+			}
+			xhr.open("POST",'/uploads');
+			xhr.send(formData);
+		};
+
+		$('body').on('click','.js-copy',function(){
+			var copyValue = $(this).attr('data-url');
+			copyInput.val(copyValue);
+			var copyTip = $(this).next();
+			if(copyValue){
+				copyInput.select();
+				document.execCommand("Copy");
+				copyTip.html('copyed');
+				setTimeout(function(){copyTip.html('');},2000)
+			}
+		})
+
+		
