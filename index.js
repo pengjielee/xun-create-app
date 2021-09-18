@@ -24,7 +24,7 @@ const FRAMEWORKS = [
       {
         name: "react",
         display: "JavaScript",
-        color: blue,
+        color: magenta,
       },
       {
         name: "react-ts",
@@ -45,7 +45,7 @@ const FRAMEWORKS = [
       {
         name: "next",
         display: "JavaScript",
-        color: blue,
+        color: magenta,
       },
     ],
   },
@@ -56,7 +56,12 @@ const FRAMEWORKS = [
       {
         name: "vue2",
         display: "JavaScript",
-        color: blue,
+        color: magenta,
+      },
+      {
+        name: "vue3",
+        display: "JavaScript",
+        color: magenta,
       },
     ],
   },
@@ -67,7 +72,7 @@ const FRAMEWORKS = [
       {
         name: "koa-static",
         display: "JavaScript",
-        color: blue,
+        color: magenta,
       },
     ],
   },
@@ -78,7 +83,7 @@ const FRAMEWORKS = [
       {
         name: "express-upload",
         display: "JavaScript",
-        color: blue,
+        color: magenta,
       },
       {
         name: "express-upload",
@@ -94,7 +99,7 @@ const FRAMEWORKS = [
       {
         name: "electron",
         display: "JavaScript",
-        color: blue,
+        color: magenta,
       },
     ],
   },
@@ -105,7 +110,7 @@ const FRAMEWORKS = [
       {
         name: "miniprogram-wechat",
         display: "JavaScript",
-        color: blue,
+        color: magenta,
       },
     ],
   },

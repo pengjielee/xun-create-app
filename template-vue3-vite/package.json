@@ -1,0 +1,20 @@
+{
+  "name": "vue3-vite-starter",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite",
+    "dev": "npm run start",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.6",
+    "vue-router": "^4.0.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.6.1",
+    "@vue/compiler-sfc": "^3.2.6",
+    "vite": "^2.5.4",
+    "sass": "^1.26.5"
+  }
+}
