@@ -1,0 +1,25 @@
+{{!< ../layout/default}}
+
+{{#contentFor "pageStyles"}}
+  <style>
+    .title { color: red; };
+  </style>
+{{/contentFor}}
+
+<h1 class="title">{{title}}</h1>
+
+<ul class="topic-list">
+  {{#each topics}}
+    <li class="topic-item">
+      <a data-id="{{this.id}}">{{this.title}}</a>
+    </li>
+  {{/each}}
+</ul>
+
+{{#contentFor "pageScripts"}}
+  <script>
+    $(function() { $('.topic-list a').click(function(e) { e.preventDefault();
+    const id = e.target.dataset.id; window.location.href = `/topic/${id}`; });
+    });
+  </script>
+{{/contentFor}}

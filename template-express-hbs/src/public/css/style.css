@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #fbfafa;
+}
+
+a {
+  color: #00b7ff;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.navs {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.navs ul {
+  display: flex;
+}
+
+.navs ul li {
+  margin-right: 10px;
+}
+
+.topic-list {
+  margin: 20px 0 30px 20px;
+  font-size: 14px;
+}
+.topic-list li {
+  list-style-type: square;
+  margin: 10px 0;
+  cursor: pointer;
+}

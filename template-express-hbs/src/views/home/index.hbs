@@ -1,0 +1,16 @@
+{{!< ../layout/default}}
+
+{{#contentFor "pageStyles"}}
+  <style>
+    .title { color: red; };
+  </style>
+{{/contentFor}}
+
+<h1 class="title">{{title}}</h1>
+
+{{#contentFor "pageScripts"}}
+  <script>
+    $(function() { $('.title').click(function() { $(this).text('Hello
+    express-hbs!'); }); });
+  </script>
+{{/contentFor}}
