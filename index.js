@@ -36,6 +36,11 @@ const FRAMEWORKS = [
         display: "JavaScript",
         color: magenta,
       },
+      {
+        name: "react-vite",
+        display: "JavaScript",
+        color: cyan,
+      },
     ],
   },
   {
@@ -61,6 +66,11 @@ const FRAMEWORKS = [
       {
         name: "vue3",
         display: "JavaScript",
+        color: cyan,
+      },
+      {
+        name: "vue3-vite",
+        display: "JavaScript",
         color: magenta,
       },
     ],
@@ -81,7 +91,7 @@ const FRAMEWORKS = [
     color: yellow,
     variants: [
       {
-        name: "express-upload",
+        name: "express-api",
         display: "JavaScript",
         color: magenta,
       },
@@ -89,6 +99,11 @@ const FRAMEWORKS = [
         name: "express-upload",
         display: "JavaScript",
         color: cyan,
+      },
+      {
+        name: "express-hbs",
+        display: "JavaScript",
+        color: magenta,
       },
     ],
   },
