@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run dev",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
+    "dev": "npm run start",
     "build": "npm run build:prod",
     "build:dev": "cross-env NODE_ENV=development webpack",
     "build:prod": "cross-env NODE_ENV=production webpack",
