@@ -50,6 +50,17 @@ const FRAMEWORKS = [
     ],
   },
   {
+    name: "vue",
+    color: yellow,
+    variants: [
+      {
+        name: "vue2",
+        display: "JavaScript",
+        color: blue,
+      },
+    ],
+  },
+  {
     name: "koa",
     color: yellow,
     variants: [
