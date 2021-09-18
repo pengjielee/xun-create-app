@@ -41,6 +41,11 @@ const FRAMEWORKS = [
         display: "JavaScript",
         color: cyan,
       },
+      {
+        name: "react-ts-vite",
+        display: "TypeScript",
+        color: magenta,
+      },
     ],
   },
   {
