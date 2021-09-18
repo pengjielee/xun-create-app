@@ -1,6 +1,6 @@
 {
   "name": "xun-create-app",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "index.js",
   "bin": {
     "xun-create-app": "index.js",
