@@ -1,6 +1,6 @@
 一个Nodejs脚手架，可以快速创建你的项目。
 
-## 全局安装安装
+## 全局安装
 
 ```bash
 $ npm install xun-create-app --global
@@ -30,7 +30,7 @@ $ xca
 - electron
 - express-api
 - express-hbs
-- express-upload，
+- express-upload
 - koa-static
 - miniprogram-wechat
 
