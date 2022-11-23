@@ -21,6 +21,7 @@
     "minimist": "^1.2.5",
     "prompts": "^2.4.1"
   },
+  "homepage": "https://www.npmjs.com/package/xun-create-app",
   "repository": {
     "type": "git",
     "url": "https://github.com/pengjielee/xun-create-app.git"
