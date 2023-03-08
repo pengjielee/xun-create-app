@@ -350,6 +350,10 @@ async function init() {
     write(file);
   }
 
+  if (template === 'gin') {
+    return;
+  }
+
   const pkg = require(path.join(templateDir, `package.json`));
 
   pkg.name = packageName || targetDir;
