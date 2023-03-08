@@ -1,0 +1,20 @@
+.page-topic-detail {
+  padding: 20px;
+}
+.page-topic-detail img {
+  max-width: 100%;
+}
+
+.page-topic-detail .title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.page-topic-detail .content {
+  line-height: 30px;
+  font-size: 16px;
+}
+.page-topic-detail .content p {
+  margin-bottom: 20px;
+}

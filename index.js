@@ -134,7 +134,28 @@ const FRAMEWORKS = [
       },
     ],
   },
-  
+  {
+    name: "admin",
+    color: yellow,
+    variants: [
+      {
+        name: "antd-admin",
+        display: "JavaScript",
+        color: magenta,
+      },
+    ],
+  },
+  {
+    name: "gin",
+    color: yellow,
+    variants: [
+      {
+        name: "gin",
+        display: "Golang",
+        color: magenta,
+      },
+    ],
+  },
 ];
 
 const TEMPLATES = FRAMEWORKS.map(

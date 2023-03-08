@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.action {
+  display: inline-block;
+  min-width: 60px;
+}
